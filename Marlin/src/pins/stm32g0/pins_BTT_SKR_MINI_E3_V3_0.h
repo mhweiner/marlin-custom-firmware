@@ -343,8 +343,8 @@
        * On BTT boards pins from IDC10 connector are numbered in unusual order.
        */
       #define BTN_ENC                EXP1_02_PIN
-      #define BTN_EN1                EXP1_06_PIN
-      #define BTN_EN2                EXP1_01_PIN
+      #define BTN_EN1                EXP1_01_PIN
+      #define BTN_EN2                EXP1_06_PIN
       #define BEEPER_PIN                    -1
 
       #define DOGLCD_CS              EXP1_03_PIN
@@ -354,6 +354,8 @@
 
       #define FORCE_SOFT_SPI
       #define LCD_BACKLIGHT_PIN             -1
+
+      #define LCD_CONTRAST           255
 
     #else
       #error "Only CR10_STOCKDISPLAY, ZONESTAR_LCD, ENDER2_STOCKDISPLAY, MKS_MINI_12864, FYSETC_MINI_12864_2_1, and TFTGLCD_PANEL_(SPI|I2C) are currently supported on the BIGTREE_SKR_MINI_E3."
@@ -437,5 +439,5 @@
 // Default NEOPIXEL_PIN
 //
 #ifndef NEOPIXEL_PIN
-  #define NEOPIXEL_PIN                      PA8   // LED driving pin
+  #define NEOPIXEL_PIN                      PB10   // LED driving pin
 #endif
