@@ -136,7 +136,7 @@
 #define HEATER_BED_PIN                      PC9   // "HB"
 #define FAN_PIN                             PC6   // "FAN0"
 #define FAN1_PIN                            PC7   // "FAN1"
-#define FAN2_PIN                            PB15  // "FAN2"
+#define FAN2_PIN                            PB15  // "FAN2" // controller
 
 /**
  *              SKR Mini E3 V3.0
